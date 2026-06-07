@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "image": "/products/hero-placeholder.jpg",
+    "alt": "Earthblend natural powder rituals — placeholder hero image, replace with final product photography"
+  },
+  "trustStrip": [
+    { "id": "fssai", "label": "FSSAI Licensed", "note": "License number to be displayed on packaging and footer" },
+    { "id": "trademark", "label": "Trademark Class 3 (Registered)", "note": "Prakriti Solutions" },
+    { "id": "made-in-india", "label": "Made in India" },
+    { "id": "amazon-verified", "label": "Verified on Amazon India" }
+  ],
+  "featuredCategories": [
+    { "id": "face", "label": "Face Rituals", "image": "/products/category-face-placeholder.jpg" },
+    { "id": "hair", "label": "Hair & Scalp Rituals", "image": "/products/category-hair-placeholder.jpg" },
+    { "id": "body", "label": "Body & Bath Rituals", "image": "/products/category-body-placeholder.jpg" }
+  ],
+  "note": "All image paths are placeholders pointing to /public/products/. Replace with final approved product photography before launch."
+}

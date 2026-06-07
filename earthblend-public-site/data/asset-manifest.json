@@ -1,0 +1,24 @@
+{
+  "products": [
+    "multani-mitti-face-pack.jpg",
+    "neem-tulsi-face-pack.jpg",
+    "turmeric-sandalwood-face-pack.jpg",
+    "rose-sandalwood-face-pack.jpg",
+    "activated-charcoal-face-pack.jpg",
+    "kashmiri-saffron-glow-pack.jpg",
+    "amla-bhringraj-hair-pack.jpg",
+    "hibiscus-fenugreek-hair-pack.jpg",
+    "onion-curry-leaf-hair-pack.jpg",
+    "aloe-vera-neem-hair-pack.jpg",
+    "ubtan-body-polish-powder.jpg",
+    "coffee-cocoa-body-scrub-powder.jpg",
+    "rice-honey-brightening-powder.jpg",
+    "lavender-oat-bath-soak-powder.jpg"
+  ],
+  "status": "PLACEHOLDER — no real product photography has been imported yet. Build product cards and pages to gracefully use a styled placeholder block (organic texture + product name) until real photos in /public/products/ are provided.",
+  "requiredBeforeLaunch": [
+    "Replace each filename above with final approved product photography (consistent lighting, neutral background, square or 4:5 ratio recommended)",
+    "Add hero, category, and lifestyle images referenced in homepage-visuals.json",
+    "Add Open Graph share image"
+  ]
+}
