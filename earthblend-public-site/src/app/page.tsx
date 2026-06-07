@@ -1,10 +1,17 @@
 import Hero from "@/components/hero";
 import ProductGrid from "@/components/product-grid";
+import TrustStrip from "@/components/trust-strip";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
     <>
       <Hero />
+
+      <div className="py-10 sm:py-14">
+        <TrustStrip />
+      </div>
+
       <section id="shop" className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28">
         <div className="mb-12 max-w-2xl">
           <p className="text-xs uppercase tracking-[0.3em] text-stone">The full ritual range</p>
@@ -19,6 +26,8 @@ export default function Home() {
         </div>
         <ProductGrid />
       </section>
+
+      <Testimonials />
     </>
   );
 }
