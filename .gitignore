@@ -15,6 +15,7 @@ downloads/
 eggs/
 .eggs/
 lib/
+!earthblend-public-site/src/lib/
 lib64/
 parts/
 sdist/
