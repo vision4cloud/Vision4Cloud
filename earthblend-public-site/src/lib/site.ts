@@ -1,5 +1,6 @@
 export const SITE = {
   brand: "Earthblend",
+  url: "https://earthblend.in",
   legalEntity: "Prakriti Solutions",
   whatsappNumber: "919911755778",
   whatsappDisplay: "+91 99117 55778",

@@ -45,7 +45,7 @@ export default function ContactContent() {
           <motion.h1 variants={rise} className="mt-3 font-display text-3xl text-deep-sage sm:text-4xl">
             Questions before you order? We&rsquo;re a message away.
           </motion.h1>
-          <motion.p variants={rise} className="mt-4 text-base leading-relaxed text-bark/65">
+          <motion.p variants={rise} className="mt-4 text-base leading-relaxed text-bark/70">
             Whether it&rsquo;s about an ingredient, picking the right ritual for your
             skin or hair, an order placed on Amazon or Flipkart, or a bulk
             inquiry — reach out below. A small team reads every message.
@@ -70,7 +70,7 @@ export default function ContactContent() {
               <div>
                 <p className="text-xs uppercase tracking-[0.18em] text-stone">{channel.label}</p>
                 <p className="mt-1 font-display text-lg text-bark group-hover:text-terracotta transition-colors">{channel.value}</p>
-                <p className="mt-1 text-sm text-bark/55">{channel.note}</p>
+                <p className="mt-1 text-sm text-bark/70">{channel.note}</p>
               </div>
               <span className="text-deep-sage transition-transform group-hover:translate-x-1 group-hover:text-terracotta" aria-hidden>→</span>
             </motion.a>
@@ -86,10 +86,10 @@ export default function ContactContent() {
         >
           <p className="text-xs uppercase tracking-[0.18em] text-stone">Business hours</p>
           <p className="mt-2 text-base text-bark/75">Monday – Saturday, 10:00 AM – 6:30 PM IST</p>
-          <p className="mt-1 text-sm text-bark/55">
+          <p className="mt-1 text-sm text-bark/70">
             Messages outside these hours are read and answered the next working day.
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-bark/55">
+          <p className="mt-4 text-sm leading-relaxed text-bark/70">
             For order tracking, returns, or replacements, please use your order
             page on Amazon India or Flipkart directly — their support teams can
             action these fastest. We&rsquo;re always glad to help point you the right way.

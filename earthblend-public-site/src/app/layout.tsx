@@ -3,6 +3,8 @@ import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
+import { SITE } from "@/lib/site";
+import { jsonLdScript } from "@/lib/json-ld";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -15,7 +17,20 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://earthblend.in";
+const siteUrl = SITE.url;
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Earthblend",
+  legalName: SITE.legalEntity,
+  url: siteUrl,
+  logo: `${siteUrl}/favicon.ico`,
+  email: SITE.email,
+  description:
+    "Earthblend makes ingredient-led natural powder blends for face, hair, and body, made by Prakriti Solutions and sold on Amazon India and Flipkart.",
+  sameAs: [],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -75,6 +90,11 @@ export default function RootLayout({
       className={`${fraunces.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-bark">
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: jsonLdScript(organizationJsonLd) }}
+        />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

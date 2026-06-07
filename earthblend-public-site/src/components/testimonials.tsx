@@ -42,7 +42,7 @@ export default function Testimonials() {
       <div className="mb-10 max-w-2xl">
         <p className="text-xs uppercase tracking-[0.3em] text-stone">In customers&rsquo; words</p>
         <h2 className="mt-3 font-display text-3xl text-deep-sage sm:text-4xl">From verified Amazon buyers</h2>
-        <p className="mt-3 text-sm text-bark/55">
+        <p className="mt-3 text-sm text-bark/70">
           Structure ready — these are placeholder cards awaiting real, permissioned
           review quotes from verified Amazon India buyers. None of the text below is a real review.
         </p>
@@ -60,7 +60,7 @@ export default function Testimonials() {
             variants={rise}
             className="flex flex-col justify-between rounded-2xl border border-dashed border-bark/15 bg-warm-ivory/50 p-6"
           >
-            <blockquote className="text-sm italic leading-relaxed text-bark/55">
+            <blockquote className="text-sm italic leading-relaxed text-bark/70">
               &ldquo;{review.placeholderQuote}&rdquo;
             </blockquote>
             <figcaption className="mt-5 flex items-center justify-between text-xs uppercase tracking-[0.15em]">

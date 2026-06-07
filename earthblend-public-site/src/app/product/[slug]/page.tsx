@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getAllSlugs, getProductBySlug, PRODUCTS } from "@/lib/products";
 import { PRODUCT_CONTENT } from "@/lib/product-content";
+import { SITE } from "@/lib/site";
+import { jsonLdScript } from "@/lib/json-ld";
 import ProductDetail from "@/components/product-detail";
 
 export function generateStaticParams() {
@@ -43,5 +44,35 @@ export default async function ProductPage({
 
   const index = PRODUCTS.findIndex((p) => p.slug === slug);
 
-  return <ProductDetail product={product} content={content} index={index} />;
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    description: content.tagline,
+    brand: { "@type": "Brand", name: "Earthblend" },
+    category: `${product.category} care`,
+    url: `${SITE.url}/product/${product.slug}`,
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "INR",
+      lowPrice: product.amazonSellingPrice,
+      highPrice: product.mrp,
+      offerCount: 2,
+      offers: [
+        { "@type": "Offer", url: product.amazonUrl, priceCurrency: "INR", price: product.amazonSellingPrice, availability: "https://schema.org/InStock" },
+        { "@type": "Offer", url: product.flipkartUrl, priceCurrency: "INR", price: product.amazonSellingPrice, availability: "https://schema.org/InStock" },
+      ],
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: jsonLdScript(productJsonLd) }}
+      />
+      <ProductDetail product={product} content={content} index={index} />
+    </>
+  );
 }

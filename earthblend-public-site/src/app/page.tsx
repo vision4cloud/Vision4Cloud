@@ -18,7 +18,7 @@ export default function Home() {
           <h2 className="mt-3 font-display text-3xl text-deep-sage sm:text-4xl">
             Fourteen blends, ground for face, hair, and body
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-bark/65">
+          <p className="mt-4 text-base leading-relaxed text-bark/70">
             Every Earthblend pack is built around a small set of time-trusted Indian
             botanicals — no long ingredient lists, no guesswork. Pick the ritual that
             matches what your week is asking for.

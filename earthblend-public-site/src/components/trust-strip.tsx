@@ -37,7 +37,7 @@ export default function TrustStrip() {
           title={badge.note}
         >
           <p className="font-display text-sm leading-snug text-deep-sage sm:text-base">{badge.label}</p>
-          <p className="mt-1.5 hidden text-xs leading-snug text-bark/55 sm:block">{badge.note}</p>
+          <p className="mt-1.5 hidden text-xs leading-snug text-bark/70 sm:block">{badge.note}</p>
         </motion.div>
       ))}
     </motion.div>

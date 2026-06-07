@@ -21,7 +21,7 @@ export default function ProductSwatch({ slug, index }: { slug: string; index: nu
         className={`absolute h-[62%] w-[62%] rounded-[48%_52%_55%_45%/50%_45%_55%_50%] ${moundColor} mix-blend-multiply transition-transform duration-500 ease-out group-hover:scale-105`}
       />
       <span className="relative font-display text-3xl text-warm-ivory/90">{initial}</span>
-      <span className="absolute bottom-3 right-3 rounded-full bg-warm-ivory/70 px-2.5 py-1 text-[0.6rem] uppercase tracking-[0.15em] text-bark/60 backdrop-blur-sm">
+      <span className="absolute bottom-3 right-3 rounded-full bg-warm-ivory/70 px-2.5 py-1 text-[0.6rem] uppercase tracking-[0.15em] text-bark/70 backdrop-blur-sm">
         Photo coming soon
       </span>
     </div>

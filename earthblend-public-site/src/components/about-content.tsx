@@ -42,7 +42,7 @@ export default function AboutContent() {
           className="mt-16 rounded-2xl border border-bark/8 bg-warm-ivory/70 p-6"
         >
           <p className="text-base leading-relaxed text-bark/75">{ABOUT_CONTENT.closing}</p>
-          <dl className="mt-5 grid grid-cols-1 gap-3 text-sm text-bark/60 sm:grid-cols-2">
+          <dl className="mt-5 grid grid-cols-1 gap-3 text-sm text-bark/70 sm:grid-cols-2">
             <div>
               <dt className="text-xs uppercase tracking-[0.15em] text-stone">Email</dt>
               <dd className="mt-1">{SITE.email}</dd>

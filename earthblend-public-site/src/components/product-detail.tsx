@@ -36,7 +36,7 @@ export default function ProductDetail({
           <span>/</span>
           <Link href="/#shop" className="transition-colors hover:text-terracotta">Shop</Link>
           <span>/</span>
-          <span className="text-bark/60">{product.name}</span>
+          <span className="text-bark/70">{product.name}</span>
         </nav>
 
         <motion.div
@@ -144,7 +144,7 @@ export default function ProductDetail({
               >
                 <span className="font-display text-2xl text-gold">{String(i + 1).padStart(2, "0")}</span>
                 <h3 className="mt-3 font-display text-lg text-bark">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-bark/65">{step.detail}</p>
+                <p className="mt-2 text-sm leading-relaxed text-bark/70">{step.detail}</p>
               </motion.div>
             ))}
           </div>

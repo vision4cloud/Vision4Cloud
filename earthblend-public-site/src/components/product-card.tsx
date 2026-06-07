@@ -41,7 +41,7 @@ export default function ProductCard({ product, index }: { product: Product; inde
             {product.name}
           </h3>
         </Link>
-        <p className="text-sm leading-relaxed text-bark/65 line-clamp-2">
+        <p className="text-sm leading-relaxed text-bark/70 line-clamp-2">
           {content?.tagline ?? product.mainBenefit}
         </p>
 

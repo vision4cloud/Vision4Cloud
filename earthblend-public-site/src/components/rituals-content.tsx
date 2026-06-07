@@ -27,7 +27,7 @@ export default function RitualsContent() {
           <motion.h1 variants={rise} className="mt-3 font-display text-3xl text-deep-sage sm:text-4xl">
             Four routines, built around twenty unhurried minutes
           </motion.h1>
-          <motion.p variants={rise} className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-bark/65">
+          <motion.p variants={rise} className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-bark/70">
             A natural powder doesn&rsquo;t do much sitting in a tin. The ritual — how
             and when you use it — is where the value actually lives. Here&rsquo;s how we&rsquo;d
             suggest building each one into your week.
@@ -114,7 +114,7 @@ function RitualSection({
               <span className="font-display text-2xl text-gold">{String(i + 1).padStart(2, "0")}</span>
               <div>
                 <h3 className="font-display text-base text-bark">{step.title}</h3>
-                <p className="mt-1.5 text-sm leading-relaxed text-bark/65">{step.detail}</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-bark/70">{step.detail}</p>
               </div>
             </div>
           ))}
